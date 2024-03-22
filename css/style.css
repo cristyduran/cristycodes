@@ -37,10 +37,9 @@ body {
   box-sizing: border-box;
   position: relative;
   line-height: 1.5;
-  font-family: sans-serif;
   overflow-x: hidden;
   overflow-y: scroll;
-  font-family: 'Source Sans Pro', sans-serif; }
+  font-family: 'Lora', serif; }
 
 a {
   text-decoration: none;
@@ -103,7 +102,7 @@ textarea {
     top: calc(100% + 1.5rem);
     height: 5px;
     width: 3rem;
-    background: #0062b9;
+    background: #B084A2;
     left: 50%;
     transform: translateX(-50%);
     border-radius: 5px; }
@@ -131,6 +130,17 @@ textarea {
   text-transform: uppercase;
   letter-spacing: 1px; }
 
+  /* for changing headings font */
+  .heading-primary,
+  .heading-sec__main,
+  .heading-sm,
+  .project-details__content-title,
+  .about__content-title,
+  .main-footer__short-desc,
+  .projects__row-content-title {
+    font-family: 'Rubik', sans-serif;
+  }
+
 .main-container {
   max-width: 120rem;
   margin: auto;
@@ -155,12 +165,12 @@ textarea {
     padding: 1.5rem 5rem;
     font-size: 1.6rem; }
   .btn--theme {
-    background: #0062b9;
+    background: #B084A2;
     color: #fff; }
   .btn--theme-inv {
-    color: #0062b9;
+    color: #B084A2;
     background: #fff;
-    border: 2px solid #0062b9;
+    border: 2px solid #B084A2;
     box-shadow: none;
     padding: calc(1.5rem - 2px) calc(5rem - 2px); }
 
@@ -185,7 +195,7 @@ textarea {
 
 .home-hero {
   color: #fff;
-  background: linear-gradient(to right, rgba(0, 98, 185, 0.8), rgba(0, 98, 185, 0.8)), url(../../assets/svg/common-bg.svg);
+  background: linear-gradient(to right, rgba(176, 132, 162, 0.8), rgba(0, 98, 185, 0.8)), url(../../assets/svg/common-bg.svg);
   background-position: center;
   height: 100vh;
   min-height: 80rem;
@@ -323,7 +333,7 @@ textarea {
           font-size: 1.7rem; } }
 
 .contact {
-  background: linear-gradient(to right, rgba(0, 98, 185, 0.8), rgba(0, 98, 185, 0.8)), url(../../assets/svg/common-bg.svg);
+  background: linear-gradient(to right, rgba(176, 132, 162, 0.8), rgba(0, 98, 185, 0.8)), url(../../assets/svg/common-bg.svg);
   background-size: cover;
   background-position: center; }
   .contact__form-container {
@@ -404,7 +414,7 @@ textarea {
 
 .project-cs-hero {
   color: #fff;
-  background: linear-gradient(to right, rgba(0, 98, 185, 0.8), rgba(0, 98, 185, 0.8)), url(../../assets/svg/common-bg.svg);
+  background: linear-gradient(to right, rgba(176, 132, 162, 0.8), rgba(0, 98, 185, 0.8)), url(../../assets/svg/common-bg.svg);
   background-size: cover;
   background-position: center;
   position: relative; }
@@ -444,10 +454,24 @@ textarea {
 
 .project-details__showcase-img-cont {
   width: 100%;
-  margin-bottom: 6rem; }
+  margin-bottom: 6rem;
+
+position: relative;
+height:auto;}
 
 .project-details__showcase-img {
-  width: 100%; }
+  width: 100%;
+  height: auto; }
+
+  .project-details__showcase-img-cont video {
+    position: absolute;
+    top: 47%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 71%; /* Adjust the percentage based on your design */
+    height: 73.5%;
+    object-fit: cover;
+  }
 
 .project-details__content-main {
   width: 100%;
@@ -522,7 +546,7 @@ textarea {
     border-radius: 50px;
     overflow: hidden;
     margin-right: 1.5rem;
-    background: #0062b9; }
+    background: #B084A2; }
     @media only screen and (max-width: 56.25em) {
       .header__logo-img-cont {
         width: 4.5rem;
